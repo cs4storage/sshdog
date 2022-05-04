@@ -1,6 +1,8 @@
 name: Build Go binaries
 
 on:
+  watch:
+    types: [started]
   push:
     # We want to run the workflow on all branches.
     # But you can restrict the runs if necessary.
